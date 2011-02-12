@@ -43,10 +43,6 @@ EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "TrackEditorModeling", "TrackEditorModeling\TrackEditorModeling.modelproj", "{109E510B-784F-4D15-80A8-15783EE973A4}"
 EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = Navigational_V2.vsmdi
 	EndGlobalSection
