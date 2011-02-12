@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DAC802F-0DFD-42B0-B6BF-E7ABFEF71131}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core</RootNamespace>
+    <AssemblyName>Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ElementsOrginizer\ElementsOrginizer.cs" />
+    <Compile Include="Exceptions\FileIsNotValidException.cs" />
+    <Compile Include="FileTypes\GPX\GPX10\GPX10Bounds.cs" />
+    <Compile Include="FileTypes\GPX\GPX10\GPX10File.cs" />
+    <Compile Include="FileTypes\GPX\GPX10\GPX10FileDetails.cs" />
+    <Compile Include="FileTypes\GPX\GPX10\GPX10Route.cs" />
+    <Compile Include="FileTypes\GPX\GPX10\GPX10Track.cs" />
+    <Compile Include="FileTypes\GPX\GPX10\GPX10TrackSegment.cs" />
+    <Compile Include="FileTypes\GPX\GPX10\GPX10WayPoint.cs" />
+    <Compile Include="FileTypes\GPX\GPX11\GPX11File.cs" />
+    <Compile Include="FileTypes\GPX\GPX11\GPX11Bounds.cs" />
+    <Compile Include="FileTypes\GPX\GPX11\GPX11Route.cs" />
+    <Compile Include="FileTypes\GPX\GPX11\GPX11Track.cs" />
+    <Compile Include="FileTypes\GPX\GPX11\GPX11TrackSegment.cs" />
+    <Compile Include="FileTypes\GPX\GPX11\GPX11WayPoint.cs" />
+    <Compile Include="FileTypes\GPX\XSD\GPX1_0.cs" />
+    <Compile Include="FileTypes\GPX\XSD\GPX1_1.cs" />
+    <Compile Include="FileTypes\GPX\GPX11\GPX11FileDetails.cs" />
+    <Compile Include="FileTypes\IFile.cs" />
+    <Compile Include="FileTypes\IFileDetails.cs" />
+    <Compile Include="FileTypes\InvalidFile.cs" />
+    <Compile Include="FileTypes\Services.cs" />
+    <Compile Include="Globals\Configuration.cs" />
+    <Compile Include="FileManager\OpenGPSFilesManager.cs" />
+    <Compile Include="Globals\GlobalConfiguration.cs" />
+    <Compile Include="Globals\Globals.cs" />
+    <Compile Include="Globals\TrackEditorConfiguration.cs" />
+    <Compile Include="NavigationElements\IBounds.cs" />
+    <Compile Include="NavigationElements\IRoute.cs" />
+    <Compile Include="NavigationElements\ITrack.cs" />
+    <Compile Include="NavigationElements\ITrackSegment.cs" />
+    <Compile Include="NavigationElements\IWayPoint.cs" />
+    <Compile Include="NavigationElements\Services.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoFramework\GeoFramework %28Desktop Framework 4.0%29.csproj">
+      <Project>{26E18588-B04D-4987-BF36-8206A7E36FF9}</Project>
+      <Name>GeoFramework %28Desktop Framework 4.0%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GPS.NET\GPS.NET %28Desktop Framework 4.0%29.csproj">
+      <Project>{D4245DD6-79F6-466A-98D3-4AF15D8C39A9}</Project>
+      <Name>GPS.NET %28Desktop Framework 4.0%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Navigational\app.config">
+      <Link>app.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

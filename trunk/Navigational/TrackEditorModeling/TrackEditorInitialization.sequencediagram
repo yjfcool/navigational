@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="b0a0c322-4b4b-45c5-9d1c-c35a7e15e6c9" name="TrackEditorInitialization" linkedPackageId="5bf5a25f-5d0a-4762-96a9-0cd4d3996d35" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="5c650511-3f34-4f8e-9f71-70060f04743d">
+      <profileInstance Id="63ade726-9fd5-4871-a2ea-c820631f8f1d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9c59a778-0f8e-4b85-b1af-135d5c43def7">
+      <profileInstance Id="1babc710-6b9b-46c8-97f3-ad146ff2dfb7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="0288c5ee-dfd5-4499-825c-3cf1c3f6fcec" name="TrackEditorInitialization" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <ownedCommentsInternal>
+          <comment Id="ea38a2b1-a952-4fff-ad49-57d9bc981a02">
+            <elementDefinition Id="ec7249a3-2503-4ef5-9f07-8e43d5eddc00" />
+            <body>TrackPointMarker should hold each track point index for later reference.</body>
+            <annotatedElements>
+              <lifelineMoniker Id="a959f833-27fd-4ce4-b2a5-ecd12f45f948" LastKnownName="TrackPointMarker" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="b716d593-2506-49c3-bbfe-3d47aceb39f7" />
+        <fragments>
+          <behaviorExecutionSpecification Id="b5f0ac89-7c22-4ebf-9802-b3cce52e8f98" name="BehaviorExecutionSpecification1">
+            <elementDefinition Id="c24a0c68-9437-4bd1-bd81-eacf3719fb6f" />
+            <coveredLifelines>
+              <lifelineMoniker Id="a7f2b1b7-de2a-46ff-93b6-23c961f7ea7e" LastKnownName="GreatMaps.Track" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="6005b08e-06f6-435e-9794-c11b599de147" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="db3cc95a-d2c5-45b9-a0bd-79d791c5a00a" LastKnownName="ExecutionOccurrenceSpecification1" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="4c41b7e4-ceff-4136-bad9-e5b809a28a46" LastKnownName="MessageOccurrenceSpecification2" />
+              <messageOccurrenceSpecificationMoniker Id="6f937d74-1cc3-46bc-ad73-b06fa38560ed" LastKnownName="MessageOccurrenceSpecification3" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="db3cc95a-d2c5-45b9-a0bd-79d791c5a00a" name="ExecutionOccurrenceSpecification1">
+            <elementDefinition Id="08081609-cc91-4bc9-8d98-75098ed18fb6" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3cb319ca-5c60-42d6-862d-d8597bcd70af" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a7f2b1b7-de2a-46ff-93b6-23c961f7ea7e" LastKnownName="GreatMaps.Track" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2507222f-c7e3-4aff-8d39-f3dc4ff5d636" name="MessageOccurrenceSpecification1">
+            <elementDefinition Id="9c4e42a0-2fff-49fb-a9a5-109160e2945c" />
+            <covered>
+              <lifelineMoniker Id="4c10ee5c-5093-4fc5-a64f-675deae4e6d2" LastKnownName="TrackEditor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="4c41b7e4-ceff-4136-bad9-e5b809a28a46" name="MessageOccurrenceSpecification2">
+            <elementDefinition Id="7391ffa8-5397-4ee9-9621-49c1e915f1bb" />
+            <covered>
+              <lifelineMoniker Id="a7f2b1b7-de2a-46ff-93b6-23c961f7ea7e" LastKnownName="GreatMaps.Track" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6f937d74-1cc3-46bc-ad73-b06fa38560ed" name="MessageOccurrenceSpecification3">
+            <elementDefinition Id="ae0ef12e-a34a-4d00-afac-6c6489e5612e" />
+            <covered>
+              <lifelineMoniker Id="a7f2b1b7-de2a-46ff-93b6-23c961f7ea7e" LastKnownName="GreatMaps.Track" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="9f4f2dca-2ec9-4d0b-8985-7f9893205d1b" name="MessageOccurrenceSpecification4">
+            <elementDefinition Id="2b20d907-c472-4845-9833-be0c38fced39" />
+            <covered>
+              <lifelineMoniker Id="4c10ee5c-5093-4fc5-a64f-675deae4e6d2" LastKnownName="TrackEditor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="6005b08e-06f6-435e-9794-c11b599de147" name="ExecutionOccurrenceSpecification2">
+            <elementDefinition Id="c6b5372e-93a0-4de9-acc8-caae1c65149d" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="130d5062-f175-49cc-98cf-b522fdf68d93" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a7f2b1b7-de2a-46ff-93b6-23c961f7ea7e" LastKnownName="GreatMaps.Track" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <combinedFragment Id="3443f403-0c8d-4fbe-8ba7-7ae91e105d53" name="CombinedFragment1" interactionOperator="Loop">
+            <elementDefinition Id="bd12e21e-e98f-4982-a58e-f784473d2f3e" />
+            <coveredLifelines>
+              <lifelineMoniker Id="a959f833-27fd-4ce4-b2a5-ecd12f45f948" LastKnownName="TrackPointMarker" />
+              <lifelineMoniker Id="4c10ee5c-5093-4fc5-a64f-675deae4e6d2" LastKnownName="TrackEditor" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="18a271e4-48ae-46ed-95c5-08725b4b7d1d" name="InteractionOperand1">
+                <elementDefinition Id="53969207-b703-4ba6-bcd0-8f32c858d1a8" />
+                <coveredLifelines>
+                  <lifelineMoniker Id="a959f833-27fd-4ce4-b2a5-ecd12f45f948" LastKnownName="TrackPointMarker" />
+                  <lifelineMoniker Id="4c10ee5c-5093-4fc5-a64f-675deae4e6d2" LastKnownName="TrackEditor" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="ca7886f9-bbbd-4305-a102-03dcecac748f">
+                    <elementDefinition Id="e2d33a69-d806-4481-91ed-7693fd12fbf2" />
+                    <maxInt>
+                      <literalString Id="8ec4f5b9-9096-4aa3-b24e-60baaccd9696" name="LiteralString1">
+                        <elementDefinition Id="530d6d2d-36ad-4255-b551-eb5cd2ff5799" />
+                      </literalString>
+                    </maxInt>
+                    <minInt>
+                      <literalString Id="0d11d58c-e82d-4f7f-8311-cc93ce139050" name="LiteralString2">
+                        <elementDefinition Id="7b7a3956-d1dd-4c4c-92ac-7adb80d06b64" />
+                      </literalString>
+                    </minInt>
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="a7bf0d6f-d591-4406-9cd4-478f6c512fff" LastKnownName="OperandOccurrenceSpecification1" />
+                  <operandOccurrenceSpecificationMoniker Id="d8f09796-9ae5-4b5a-8cc9-f1b7efb4e8f8" LastKnownName="OperandOccurrenceSpecification2" />
+                  <operandOccurrenceSpecificationMoniker Id="fd8434a3-fa1a-4e43-9e64-2533ffc2d083" LastKnownName="OperandOccurrenceSpecification3" />
+                  <operandOccurrenceSpecificationMoniker Id="f11fb0fe-913d-49c3-b4f8-7b311fbe1595" LastKnownName="OperandOccurrenceSpecification4" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="a7bf0d6f-d591-4406-9cd4-478f6c512fff" name="OperandOccurrenceSpecification1">
+            <elementDefinition Id="e5d60a98-3c01-4ddd-a35b-c9057f82fda6" />
+            <covered>
+              <lifelineMoniker Id="a959f833-27fd-4ce4-b2a5-ecd12f45f948" LastKnownName="TrackPointMarker" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="fd8434a3-fa1a-4e43-9e64-2533ffc2d083" name="OperandOccurrenceSpecification3">
+            <elementDefinition Id="fd2c80f4-5db4-4115-a13a-35797ff292e9" />
+            <covered>
+              <lifelineMoniker Id="4c10ee5c-5093-4fc5-a64f-675deae4e6d2" LastKnownName="TrackEditor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="a89af7b9-90fe-4c43-b332-048ccceb8fd2" name="BehaviorExecutionSpecification2">
+            <elementDefinition Id="56022eeb-541b-4bb8-8047-f3a47b3bbca7" />
+            <coveredLifelines>
+              <lifelineMoniker Id="a959f833-27fd-4ce4-b2a5-ecd12f45f948" LastKnownName="TrackPointMarker" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="e035dd4b-f923-4cae-8941-25fb0a61c429" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="bbc806df-68e8-40e3-8ad9-f438596c638c" LastKnownName="ExecutionOccurrenceSpecification3" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="0e978d39-d1be-48f3-ba7b-4daa969ed76f" LastKnownName="MessageOccurrenceSpecification6" />
+              <messageOccurrenceSpecificationMoniker Id="ca8f9c16-9052-449e-8914-e2c9d1ea937e" LastKnownName="MessageOccurrenceSpecification7" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="bbc806df-68e8-40e3-8ad9-f438596c638c" name="ExecutionOccurrenceSpecification3">
+            <elementDefinition Id="4be8dd8b-8fdb-4a77-9449-2fd87e5ddffe" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="8d37d3ad-4a44-4719-a32c-018bc2a76263" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a959f833-27fd-4ce4-b2a5-ecd12f45f948" LastKnownName="TrackPointMarker" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6233d958-4108-45e2-8589-791627908c1e" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="5d98acd8-6695-40fb-96da-2a2893171eea" />
+            <covered>
+              <lifelineMoniker Id="4c10ee5c-5093-4fc5-a64f-675deae4e6d2" LastKnownName="TrackEditor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0e978d39-d1be-48f3-ba7b-4daa969ed76f" name="MessageOccurrenceSpecification6">
+            <elementDefinition Id="deca378f-699e-4af9-a1f2-a91ec50b3dfe" />
+            <covered>
+              <lifelineMoniker Id="a959f833-27fd-4ce4-b2a5-ecd12f45f948" LastKnownName="TrackPointMarker" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e77eaeae-419c-4641-9ea6-2a787f3f672f" name="MessageOccurrenceSpecification8">
+            <elementDefinition Id="4df0db83-d15e-4093-a6bc-67cfeb925553" />
+            <covered>
+              <lifelineMoniker Id="4c10ee5c-5093-4fc5-a64f-675deae4e6d2" LastKnownName="TrackEditor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ca8f9c16-9052-449e-8914-e2c9d1ea937e" name="MessageOccurrenceSpecification7">
+            <elementDefinition Id="a519d213-faa9-4d98-b7bc-6d553530c4ae" />
+            <covered>
+              <lifelineMoniker Id="a959f833-27fd-4ce4-b2a5-ecd12f45f948" LastKnownName="TrackPointMarker" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="e035dd4b-f923-4cae-8941-25fb0a61c429" name="ExecutionOccurrenceSpecification4">
+            <elementDefinition Id="6f9ad95b-4657-40aa-8a56-58c7543978d0" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="9820760c-978c-420f-a57a-3c962365a78d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a959f833-27fd-4ce4-b2a5-ecd12f45f948" LastKnownName="TrackPointMarker" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="d8f09796-9ae5-4b5a-8cc9-f1b7efb4e8f8" name="OperandOccurrenceSpecification2">
+            <elementDefinition Id="8eaf7b63-3bf3-48e9-a94e-db6774e6377f" />
+            <covered>
+              <lifelineMoniker Id="a959f833-27fd-4ce4-b2a5-ecd12f45f948" LastKnownName="TrackPointMarker" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="f11fb0fe-913d-49c3-b4f8-7b311fbe1595" name="OperandOccurrenceSpecification4">
+            <elementDefinition Id="ec20d272-9fa1-4597-be1f-8515b8f3951a" />
+            <covered>
+              <lifelineMoniker Id="4c10ee5c-5093-4fc5-a64f-675deae4e6d2" LastKnownName="TrackEditor" />
+            </covered>
+          </operandOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="4c10ee5c-5093-4fc5-a64f-675deae4e6d2" name="TrackEditor" isActor="false" lifelineDisplayName="TrackEditor">
+            <elementDefinition Id="8c582590-d6ea-4877-9b4b-5eabcd505e32" />
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="2507222f-c7e3-4aff-8d39-f3dc4ff5d636" LastKnownName="MessageOccurrenceSpecification1" />
+              <messageOccurrenceSpecificationMoniker Id="9f4f2dca-2ec9-4d0b-8985-7f9893205d1b" LastKnownName="MessageOccurrenceSpecification4" />
+              <operandOccurrenceSpecificationMoniker Id="fd8434a3-fa1a-4e43-9e64-2533ffc2d083" LastKnownName="OperandOccurrenceSpecification3" />
+              <messageOccurrenceSpecificationMoniker Id="6233d958-4108-45e2-8589-791627908c1e" LastKnownName="MessageOccurrenceSpecification5" />
+              <messageOccurrenceSpecificationMoniker Id="e77eaeae-419c-4641-9ea6-2a787f3f672f" LastKnownName="MessageOccurrenceSpecification8" />
+              <operandOccurrenceSpecificationMoniker Id="f11fb0fe-913d-49c3-b4f8-7b311fbe1595" LastKnownName="OperandOccurrenceSpecification4" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="a7f2b1b7-de2a-46ff-93b6-23c961f7ea7e" name="GreatMaps.Track" isActor="false" lifelineDisplayName="GreatMaps.Track">
+            <elementDefinition Id="cdca8097-5dec-4a03-a38e-6beade0bcbc9" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="db3cc95a-d2c5-45b9-a0bd-79d791c5a00a" LastKnownName="ExecutionOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="6005b08e-06f6-435e-9794-c11b599de147" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="a959f833-27fd-4ce4-b2a5-ecd12f45f948" name="TrackPointMarker" isActor="false" lifelineDisplayName="TrackPointMarker">
+            <elementDefinition Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28" />
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="a7bf0d6f-d591-4406-9cd4-478f6c512fff" LastKnownName="OperandOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="bbc806df-68e8-40e3-8ad9-f438596c638c" LastKnownName="ExecutionOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="e035dd4b-f923-4cae-8941-25fb0a61c429" LastKnownName="ExecutionOccurrenceSpecification4" />
+              <operandOccurrenceSpecificationMoniker Id="d8f09796-9ae5-4b5a-8cc9-f1b7efb4e8f8" LastKnownName="OperandOccurrenceSpecification2" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="7fd9ebd2-8434-407e-8352-c717451f7438" name="GetTrackPoint()" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="9fbb13e1-3d31-4968-8a0a-883753b4f290" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="2507222f-c7e3-4aff-8d39-f3dc4ff5d636" LastKnownName="MessageOccurrenceSpecification1" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="4c41b7e4-ceff-4136-bad9-e5b809a28a46" LastKnownName="MessageOccurrenceSpecification2" />
+            </receiveEvent>
+          </message>
+          <message Id="011dd6e8-a1fd-4431-908b-b4be362c6984" name="List&lt;PointLatLon&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="9c7c9283-4781-470f-b938-67cb81542569" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="6f937d74-1cc3-46bc-ad73-b06fa38560ed" LastKnownName="MessageOccurrenceSpecification3" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="9f4f2dca-2ec9-4d0b-8985-7f9893205d1b" LastKnownName="MessageOccurrenceSpecification4" />
+            </receiveEvent>
+          </message>
+          <message Id="3e8d0004-95ed-49fc-b089-efc092c43ca1" name="Foreach track point create TrackPointMarker" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="6c66417e-6c26-4d31-8844-43cbd1f310b2" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="6233d958-4108-45e2-8589-791627908c1e" LastKnownName="MessageOccurrenceSpecification5" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="0e978d39-d1be-48f3-ba7b-4daa969ed76f" LastKnownName="MessageOccurrenceSpecification6" />
+            </receiveEvent>
+          </message>
+          <message Id="79f0fc05-e4c5-4425-b625-193a00142a4d" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="101efd02-7d7c-4c0a-b74e-a494d38f1ba0" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="ca8f9c16-9052-449e-8914-e2c9d1ea937e" LastKnownName="MessageOccurrenceSpecification7" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e77eaeae-419c-4641-9ea6-2a787f3f672f" LastKnownName="MessageOccurrenceSpecification8" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3cb319ca-5c60-42d6-862d-d8597bcd70af" name="ExecutionEvent">
+        <elementDefinition Id="5ea81c4e-a4aa-425e-a9da-fa91138c0efc" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="130d5062-f175-49cc-98cf-b522fdf68d93" name="ExecutionEvent">
+        <elementDefinition Id="757db1ea-a5ee-43bf-8e97-fc2ed9433e13" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="8d37d3ad-4a44-4719-a32c-018bc2a76263" name="ExecutionEvent">
+        <elementDefinition Id="d73c88db-8d79-43ed-862c-6f93a4820964" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="9820760c-978c-420f-a57a-3c962365a78d" name="ExecutionEvent">
+        <elementDefinition Id="60cbeb8e-ece5-40bf-b2cf-67c0888bff74" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="5bf5a25f-5d0a-4762-96a9-0cd4d3996d35" name="TrackEditorModeling">
+    <elementDefinition Id="11e310aa-34ee-425b-895e-7f2476fa3ba5" />
+  </package>
+</SequenceDesignerModel>

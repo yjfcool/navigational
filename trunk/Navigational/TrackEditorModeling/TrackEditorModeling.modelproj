@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{109e510b-784f-4d15-80a8-15783ee973a4}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>TrackEditorModeling</Name>
+    <RootNamespace>TrackEditorModeling</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="TrackEditorClassDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TrackEditorClassDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TrackEditorClassDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="TrackEditorInitialization.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TrackEditorInitialization.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TrackEditorInitialization.sequencediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\TrackEditorModeling.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

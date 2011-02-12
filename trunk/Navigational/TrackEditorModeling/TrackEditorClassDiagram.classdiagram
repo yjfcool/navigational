@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="047a71fa-069d-44a7-8630-d66eb901a8f2" name="TrackEditorClassDiagram" linkedPackageId="397ef182-d130-4e5a-adea-f53f104235c7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="69369f00-4a38-4517-ba63-5f56956337b2">
+      <profileInstance Id="3b709fb8-f76b-4278-adc4-c585554fea8c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6d1ef747-8ed0-4d73-be90-063d6234d9c6">
+      <profileInstance Id="2e5eeaf1-e6cf-4645-a45f-cd3ddc0fafa2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b6dcd344-a8b6-4864-a80f-457d6f785a53" name="TrackEditor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="96a6b91f-0db2-41b8-8625-20d4d7c66a74" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3c0f3af5-94cb-4e32-b6b3-c156c23ffa77" name="TrackPoint" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ef490dd6-af18-41f3-864d-ecd1c0fc21a1" />
+        <generalsInternal>
+          <generalization Id="b23d7e4d-471e-4220-8d83-39837fd3e640" isSubstitutable="false">
+            <classMoniker Id="91503cee-7e54-400f-9f7d-f2dda1c6ff4f" LastKnownName="GMapMarker" />
+            <elementDefinition Id="deb2b777-f3f0-4e81-84aa-3c0da7bde18e" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="2c6bc362-492a-44ee-8399-155fc02fa162" name="TrackPoint" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="08adde58-722f-44f2-84ea-ecc155337df6" name="create" profile="StandardProfileL2">
+                <elementDefinition Id="5011349c-b5e5-4502-b034-b9176785b813" />
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="7e411d9d-c221-425b-89b2-cc14a09312ed" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b12146e7-1db9-41fc-b88c-87253921371c" name="trackIndex" direction="In">
+                  <elementDefinition Id="a1ad92e1-00d7-4a90-a789-c59983ea72a1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f1dc5589-50f8-4c9b-ba95-14372318b91a" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="39369547-fcc1-48b3-8bdf-c8a287f2691e" name="getTrackIndex" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="67b8e7a3-db0e-4e72-a02a-ae726653652a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="da415b7e-e2f8-44e3-b451-5123c4993071" direction="Return">
+                  <elementDefinition Id="952c1c7b-d350-4569-af8c-c3bd5c310c1d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f1dc5589-50f8-4c9b-ba95-14372318b91a" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="2be5a614-cd47-403e-8c9c-bfaae549eea9" name="setTrackIndex" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="73cddb9a-bc90-459a-9dc9-2395cc28eb2b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="db9c6246-169e-4f89-9f71-a14ef45156af" name="newIndex" direction="In">
+                  <elementDefinition Id="bebc76b6-6d8e-4db4-8e69-592687f61eca" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f1dc5589-50f8-4c9b-ba95-14372318b91a" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="29d8d651-3898-423c-aa1b-fdf484c32061" name="GhostPoint" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5406adb4-4868-47ce-827f-bbc86f7ad421" />
+        <generalsInternal>
+          <generalization Id="94d20db5-320d-459d-b1e8-0fbe2d689963" isSubstitutable="false">
+            <classMoniker Id="91503cee-7e54-400f-9f7d-f2dda1c6ff4f" LastKnownName="GMapMarker" />
+            <elementDefinition Id="99729c4c-eec4-4ce0-888d-3b861e1eb2cd" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="94a9647b-e3df-42e7-95f2-065abf51c4b9" name="GhostPoint" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="45435b38-71a1-4ebc-92d3-a748a966d52c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3b519710-0393-434c-8ed6-0ecb5058070e" name="trackPoint" direction="In">
+                  <elementDefinition Id="324e7378-ec47-4e27-b26b-308548534dc4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2ebd47d1-2b36-4a82-b783-dad2852b5030" LastKnownName="TrackPoint" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d00ae5c7-67b2-4522-8512-7dc6d012eb6b" name="point" direction="In">
+                  <elementDefinition Id="12c02409-2914-407e-8611-ac3986c88308" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="92f6b2c5-69c8-42e6-8631-c32ca9259a18" LastKnownName="GMap.PointLatLng" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1828be93-84e1-481c-86d4-f3f5286d716e" name="relatedRoute" direction="In">
+                  <elementDefinition Id="d83a99d7-7cd4-4abc-a6f0-338fea5e336b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a2ac67a2-f8dd-48b2-bda5-41f8b8d1637d" LastKnownName="GMapRoute" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="69ed7bc2-8470-433d-be70-2cb956bc4841" name="getRelatedTrackPoint" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="385486ac-b1cb-48c9-927a-6c3eaf29fcd3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="574f80b3-e02d-47df-b68c-70283dd72540" direction="Return">
+                  <elementDefinition Id="24a5519f-1db9-422a-b058-d989fd895c40" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="df7a9a64-a1fd-443c-817f-a96a90792018" LastKnownName="TrackPoint" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f1dc5589-50f8-4c9b-ba95-14372318b91a" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2ebd47d1-2b36-4a82-b783-dad2852b5030" name="TrackPoint" isAbstract="false" isLeaf="false" cachedFullName="TrackEditorModeling::TrackPoint">
+        <elementDefinition Id="ef490dd6-af18-41f3-864d-ecd1c0fc21a1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="df7a9a64-a1fd-443c-817f-a96a90792018" name="TrackPoint" isAbstract="false" isLeaf="false" cachedFullName="TrackEditorModeling::TrackPoint">
+        <elementDefinition Id="ef490dd6-af18-41f3-864d-ecd1c0fc21a1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="91503cee-7e54-400f-9f7d-f2dda1c6ff4f" name="GMapMarker" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="90154f1d-03be-4619-b44f-e162d72c556e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="92f6b2c5-69c8-42e6-8631-c32ca9259a18" name="GMap.PointLatLng" isAbstract="false" isLeaf="false" cachedFullName="GMap.PointLatLng">
+        <elementDefinition Id="bd74af55-6cd3-40a6-be87-36c32ee44edc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a2ac67a2-f8dd-48b2-bda5-41f8b8d1637d" name="GMapRoute" isAbstract="false" isLeaf="false" cachedFullName="GMapRoute">
+        <elementDefinition Id="19cfcd22-ee2f-42cc-8134-7745821c8387" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="397ef182-d130-4e5a-adea-f53f104235c7" name="TrackEditorModeling">
+    <elementDefinition Id="11e310aa-34ee-425b-895e-7f2476fa3ba5" />
+  </package>
+</logicalClassDesignerModel>

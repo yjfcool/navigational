@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9DA7A04-9402-42A6-8E21-D41321E88145}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Navigational.WindowsForms</RootNamespace>
+    <AssemblyName>WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationalControls\CustomScrollableTableLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationalControls\FileManager\FileManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigationalControls\FileManager\FileManager.Designer.cs">
+      <DependentUpon>FileManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationalControls\FileManager\FileManagerItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigationalControls\FileManager\FileManagerItem.Designer.cs">
+      <DependentUpon>FileManagerItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationalControls\SlidingPanel\SlidingPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigationalControls\SlidingPanel\SlidingPanel.Designer.cs">
+      <DependentUpon>SlidingPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationalControls\SlidingPanel\TestingSliding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NavigationalControls\SlidingPanel\TestingSliding.Designer.cs">
+      <DependentUpon>TestingSliding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationalControls\TrackEditor\Markers\GhostMarker.cs" />
+    <Compile Include="NavigationalControls\TrackEditor\Markers\GhostPoint.cs" />
+    <Compile Include="NavigationalControls\TrackEditor\Markers\RoutePointMarker.cs" />
+    <Compile Include="NavigationalControls\TrackEditor\Markers\TrackPoint.cs" />
+    <Compile Include="NavigationalControls\TrackEditor\TrackEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigationalControls\TrackEditor\TrackEditor.Designer.cs">
+      <DependentUpon>TrackEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationalMap\INavigationalMapHost.cs" />
+    <Compile Include="NavigationalMap\NavigationalMapControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationalControls\CustomScrollableTableLayoutPanel.resx">
+      <DependentUpon>CustomScrollableTableLayoutPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationalControls\FileManager\FileManager.resx">
+      <DependentUpon>FileManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationalControls\FileManager\FileManagerItem.resx">
+      <DependentUpon>FileManagerItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationalControls\SlidingPanel\SlidingPanel.resx">
+      <DependentUpon>SlidingPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationalControls\SlidingPanel\TestingSliding.resx">
+      <DependentUpon>TestingSliding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationalControls\TrackEditor\TrackEditor.resx">
+      <DependentUpon>TrackEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationalMap\NavigationalMapControl.resx">
+      <DependentUpon>NavigationalMapControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{8DAC802F-0DFD-42B0-B6BF-E7ABFEF71131}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoFramework\GeoFramework %28Desktop Framework 4.0%29.csproj">
+      <Project>{26E18588-B04D-4987-BF36-8206A7E36FF9}</Project>
+      <Name>GeoFramework %28Desktop Framework 4.0%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GreatMaps\GMap.NET.Core\GMap.NET.Core.csproj">
+      <Project>{D0C39D9D-BED0-418B-9A5E-713176CAF40C}</Project>
+      <Name>GMap.NET.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GreatMaps\GMap.NET.WindowsForms\GMap.NET.WindowsForms.csproj">
+      <Project>{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}</Project>
+      <Name>GMap.NET.WindowsForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UIUtilities\UIUtilities.csproj">
+      <Project>{50AC7420-52E9-45A5-BFF5-C31918383739}</Project>
+      <Name>UIUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-arrow-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feature_nextButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feature_prevButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dot_marker_red.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

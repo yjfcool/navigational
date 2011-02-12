@@ -1,0 +1,880 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="11e310aa-34ee-425b-895e-7f2476fa3ba5"
+  name="TrackEditorModeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction
+        Id="b716d593-2506-49c3-bbfe-3d47aceb39f7"
+        name="TrackEditorInitialization"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="ec7249a3-2503-4ef5-9f07-8e43d5eddc00">
+            <body>TrackPointMarker should hold each track point index for later reference.</body>
+            <annotatedElements>
+              <lifelineMoniker
+                Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28"
+                LastKnownName="TrackPointMarker"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="c24a0c68-9437-4bd1-bd81-eacf3719fb6f"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="cdca8097-5dec-4a03-a38e-6beade0bcbc9"
+                LastKnownName="GreatMaps.Track"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c6b5372e-93a0-4de9-acc8-caae1c65149d"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="08081609-cc91-4bc9-8d98-75098ed18fb6"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="7391ffa8-5397-4ee9-9621-49c1e915f1bb"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ae0ef12e-a34a-4d00-afac-6c6489e5612e"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="08081609-cc91-4bc9-8d98-75098ed18fb6"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5ea81c4e-a4aa-425e-a9da-fa91138c0efc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrackEditorModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cdca8097-5dec-4a03-a38e-6beade0bcbc9"
+                LastKnownName="GreatMaps.Track"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9c4e42a0-2fff-49fb-a9a5-109160e2945c"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="8c582590-d6ea-4877-9b4b-5eabcd505e32"
+                LastKnownName="TrackEditor"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7391ffa8-5397-4ee9-9621-49c1e915f1bb"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="cdca8097-5dec-4a03-a38e-6beade0bcbc9"
+                LastKnownName="GreatMaps.Track"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ae0ef12e-a34a-4d00-afac-6c6489e5612e"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="cdca8097-5dec-4a03-a38e-6beade0bcbc9"
+                LastKnownName="GreatMaps.Track"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2b20d907-c472-4845-9833-be0c38fced39"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="8c582590-d6ea-4877-9b4b-5eabcd505e32"
+                LastKnownName="TrackEditor"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c6b5372e-93a0-4de9-acc8-caae1c65149d"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="757db1ea-a5ee-43bf-8e97-fc2ed9433e13"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrackEditorModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cdca8097-5dec-4a03-a38e-6beade0bcbc9"
+                LastKnownName="GreatMaps.Track"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <combinedFragment
+            Id="bd12e21e-e98f-4982-a58e-f784473d2f3e"
+            name="CombinedFragment1"
+            interactionOperator="Loop">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28"
+                LastKnownName="TrackPointMarker"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <lifelineMoniker
+                Id="8c582590-d6ea-4877-9b4b-5eabcd505e32"
+                LastKnownName="TrackEditor"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand
+                Id="53969207-b703-4ba6-bcd0-8f32c858d1a8"
+                name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28"
+                    LastKnownName="TrackPointMarker"
+                    LastKnownLocation="TrackEditorModeling.uml" />
+                  <lifelineMoniker
+                    Id="8c582590-d6ea-4877-9b4b-5eabcd505e32"
+                    LastKnownName="TrackEditor"
+                    LastKnownLocation="TrackEditorModeling.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="e2d33a69-d806-4481-91ed-7693fd12fbf2">
+                    <maxInt>
+                      <literalString
+                        Id="530d6d2d-36ad-4255-b551-eb5cd2ff5799"
+                        name="LiteralString1" />
+                    </maxInt>
+                    <minInt>
+                      <literalString
+                        Id="7b7a3956-d1dd-4c4c-92ac-7adb80d06b64"
+                        name="LiteralString2" />
+                    </minInt>
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="e5d60a98-3c01-4ddd-a35b-c9057f82fda6"
+                    LastKnownName="OperandOccurrenceSpecification1"
+                    LastKnownLocation="TrackEditorModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="8eaf7b63-3bf3-48e9-a94e-db6774e6377f"
+                    LastKnownName="OperandOccurrenceSpecification2"
+                    LastKnownLocation="TrackEditorModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="fd2c80f4-5db4-4115-a13a-35797ff292e9"
+                    LastKnownName="OperandOccurrenceSpecification3"
+                    LastKnownLocation="TrackEditorModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="ec20d272-9fa1-4597-be1f-8515b8f3951a"
+                    LastKnownName="OperandOccurrenceSpecification4"
+                    LastKnownLocation="TrackEditorModeling.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification
+            Id="e5d60a98-3c01-4ddd-a35b-c9057f82fda6"
+            name="OperandOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28"
+                LastKnownName="TrackPointMarker"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="fd2c80f4-5db4-4115-a13a-35797ff292e9"
+            name="OperandOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="8c582590-d6ea-4877-9b4b-5eabcd505e32"
+                LastKnownName="TrackEditor"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="56022eeb-541b-4bb8-8047-f3a47b3bbca7"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28"
+                LastKnownName="TrackPointMarker"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="6f9ad95b-4657-40aa-8a56-58c7543978d0"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4be8dd8b-8fdb-4a77-9449-2fd87e5ddffe"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="deca378f-699e-4af9-a1f2-a91ec50b3dfe"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a519d213-faa9-4d98-b7bc-6d553530c4ae"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4be8dd8b-8fdb-4a77-9449-2fd87e5ddffe"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d73c88db-8d79-43ed-862c-6f93a4820964"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrackEditorModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28"
+                LastKnownName="TrackPointMarker"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5d98acd8-6695-40fb-96da-2a2893171eea"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="8c582590-d6ea-4877-9b4b-5eabcd505e32"
+                LastKnownName="TrackEditor"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="deca378f-699e-4af9-a1f2-a91ec50b3dfe"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28"
+                LastKnownName="TrackPointMarker"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4df0db83-d15e-4093-a6bc-67cfeb925553"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="8c582590-d6ea-4877-9b4b-5eabcd505e32"
+                LastKnownName="TrackEditor"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a519d213-faa9-4d98-b7bc-6d553530c4ae"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28"
+                LastKnownName="TrackPointMarker"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="6f9ad95b-4657-40aa-8a56-58c7543978d0"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="60cbeb8e-ece5-40bf-b2cf-67c0888bff74"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrackEditorModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28"
+                LastKnownName="TrackPointMarker"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="8eaf7b63-3bf3-48e9-a94e-db6774e6377f"
+            name="OperandOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28"
+                LastKnownName="TrackPointMarker"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="ec20d272-9fa1-4597-be1f-8515b8f3951a"
+            name="OperandOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="8c582590-d6ea-4877-9b4b-5eabcd505e32"
+                LastKnownName="TrackEditor"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="8c582590-d6ea-4877-9b4b-5eabcd505e32"
+            name="TrackEditor"
+            isActor="false"
+            lifelineDisplayName="TrackEditor">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9c4e42a0-2fff-49fb-a9a5-109160e2945c"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2b20d907-c472-4845-9833-be0c38fced39"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="fd2c80f4-5db4-4115-a13a-35797ff292e9"
+                LastKnownName="OperandOccurrenceSpecification3"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5d98acd8-6695-40fb-96da-2a2893171eea"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4df0db83-d15e-4093-a6bc-67cfeb925553"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="ec20d272-9fa1-4597-be1f-8515b8f3951a"
+                LastKnownName="OperandOccurrenceSpecification4"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="cdca8097-5dec-4a03-a38e-6beade0bcbc9"
+            name="GreatMaps.Track"
+            isActor="false"
+            lifelineDisplayName="GreatMaps.Track">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="08081609-cc91-4bc9-8d98-75098ed18fb6"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c6b5372e-93a0-4de9-acc8-caae1c65149d"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="df97f4d9-d9b5-42ca-b253-3e2518ea8b28"
+            name="TrackPointMarker"
+            isActor="false"
+            lifelineDisplayName="TrackPointMarker">
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="e5d60a98-3c01-4ddd-a35b-c9057f82fda6"
+                LastKnownName="OperandOccurrenceSpecification1"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4be8dd8b-8fdb-4a77-9449-2fd87e5ddffe"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="6f9ad95b-4657-40aa-8a56-58c7543978d0"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="TrackEditorModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="8eaf7b63-3bf3-48e9-a94e-db6774e6377f"
+                LastKnownName="OperandOccurrenceSpecification2"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="9fbb13e1-3d31-4968-8a0a-883753b4f290"
+            name="GetTrackPoint()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9c4e42a0-2fff-49fb-a9a5-109160e2945c"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7391ffa8-5397-4ee9-9621-49c1e915f1bb"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9c7c9283-4781-470f-b938-67cb81542569"
+            name="List&lt;PointLatLon&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ae0ef12e-a34a-4d00-afac-6c6489e5612e"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2b20d907-c472-4845-9833-be0c38fced39"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6c66417e-6c26-4d31-8844-43cbd1f310b2"
+            name="Foreach track point create TrackPointMarker"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5d98acd8-6695-40fb-96da-2a2893171eea"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="deca378f-699e-4af9-a1f2-a91ec50b3dfe"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="101efd02-7d7c-4c0a-b74e-a494d38f1ba0"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a519d213-faa9-4d98-b7bc-6d553530c4ae"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4df0db83-d15e-4093-a6bc-67cfeb925553"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="TrackEditorModeling.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5ea81c4e-a4aa-425e-a9da-fa91138c0efc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="757db1ea-a5ee-43bf-8e97-fc2ed9433e13"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d73c88db-8d79-43ed-862c-6f93a4820964"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="60cbeb8e-ece5-40bf-b2cf-67c0888bff74"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="96a6b91f-0db2-41b8-8625-20d4d7c66a74"
+        name="TrackEditor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="db5a02ee-4214-474c-8173-1524abbe069d"
+        name="TrackPointMarker"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="190b3c7d-4ad2-462f-ae0c-9fe19a754755"
+        name="GhostPointMarker"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ef490dd6-af18-41f3-864d-ecd1c0fc21a1"
+        name="TrackPoint"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="deb2b777-f3f0-4e81-84aa-3c0da7bde18e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="90154f1d-03be-4619-b44f-e162d72c556e"
+              LastKnownName="GMapMarker"
+              LastKnownLocation="TrackEditorModeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="bdaf78cd-90f3-429d-8fd6-dc1ccb7a1f4d"
+            isDerived="false"
+            sourceEndRoleName="TrackPoint"
+            targetEndRoleName="TrackPointMarker"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="db5a02ee-4214-474c-8173-1524abbe069d"
+              LastKnownName="TrackPointMarker"
+              LastKnownLocation="TrackEditorModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3cf7c33d-aa40-4e35-b9dc-64db3aa72a42"
+                  name="TrackPoint"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d4ae0e1-9850-4c58-bac3-444c0fe3f732"
+                  name="TrackPointMarker"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="7e411d9d-c221-425b-89b2-cc14a09312ed"
+            name="TrackPoint"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5011349c-b5e5-4502-b034-b9176785b813"
+                name="create"
+                profile="StandardProfileL2" />
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a1ad92e1-00d7-4a90-a789-c59983ea72a1"
+                  name="trackIndex"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="TrackEditorModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="67b8e7a3-db0e-4e72-a02a-ae726653652a"
+            name="getTrackIndex"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="952c1c7b-d350-4569-af8c-c3bd5c310c1d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="TrackEditorModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="73cddb9a-bc90-459a-9dc9-2395cc28eb2b"
+            name="setTrackIndex"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bebc76b6-6d8e-4db4-8e69-592687f61eca"
+                  name="newIndex"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="TrackEditorModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5406adb4-4868-47ce-827f-bbc86f7ad421"
+        name="GhostPoint"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="99729c4c-eec4-4ce0-888d-3b861e1eb2cd"
+            isSubstitutable="false">
+            <classMoniker
+              Id="90154f1d-03be-4619-b44f-e162d72c556e"
+              LastKnownName="GMapMarker"
+              LastKnownLocation="TrackEditorModeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="14c2d63f-04ba-4779-ab08-fc6e65614826"
+            isDerived="false"
+            sourceEndRoleName="GhostPoint"
+            targetEndRoleName="GhostPointMarker"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="190b3c7d-4ad2-462f-ae0c-9fe19a754755"
+              LastKnownName="GhostPointMarker"
+              LastKnownLocation="TrackEditorModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ff18655f-9bbb-4a14-a176-e97accb2f8b1"
+                  name="GhostPoint"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="169d6c1e-f428-442b-8fd9-703461483d0f"
+                  name="GhostPointMarker"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="45435b38-71a1-4ebc-92d3-a748a966d52c"
+            name="GhostPoint"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="324e7378-ec47-4e27-b26b-308548534dc4"
+                  name="trackPoint"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ef490dd6-af18-41f3-864d-ecd1c0fc21a1"
+                      LastKnownName="TrackPoint"
+                      LastKnownLocation="TrackEditorModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="12c02409-2914-407e-8611-ac3986c88308"
+                  name="point"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="bd74af55-6cd3-40a6-be87-36c32ee44edc"
+                      LastKnownName="GMap.PointLatLng"
+                      LastKnownLocation="TrackEditorModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d83a99d7-7cd4-4abc-a6f0-338fea5e336b"
+                  name="relatedRoute"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="19cfcd22-ee2f-42cc-8134-7745821c8387"
+                      LastKnownName="GMapRoute"
+                      LastKnownLocation="TrackEditorModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="385486ac-b1cb-48c9-927a-6c3eaf29fcd3"
+            name="getRelatedTrackPoint"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="24a5519f-1db9-422a-b058-d989fd895c40"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ef490dd6-af18-41f3-864d-ecd1c0fc21a1"
+                      LastKnownName="TrackPoint"
+                      LastKnownLocation="TrackEditorModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e1aa3774-4bf8-4ecd-84e8-4949b3bb748d"
+        name="in" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="90154f1d-03be-4619-b44f-e162d72c556e"
+        name="GMapMarker"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="bd74af55-6cd3-40a6-be87-36c32ee44edc"
+        name="GMap.PointLatLng" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="19cfcd22-ee2f-42cc-8134-7745821c8387"
+        name="GMapRoute" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
